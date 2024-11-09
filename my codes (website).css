@@ -1,0 +1,96 @@
+body {
+    font-family: "Times New Roman", Times, serif; /* Ensures Times New Roman is used for all text */
+    background-color: #d3d3d3; /* Light grey background for the whole website */
+    color: #333; /* Dark text color for better readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Times, serif; /* Ensure all headers use Times New Roman */
+    color: #000; /* Black color for headers */
+}
+
+header {
+    background-color: #87CEFA; /* Light blue background for the header */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em; /* Slightly larger font size for the title */
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #000; /* Black border around the title */
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f0f8ff; /* Light background for the title */
+}
+
+h2 {
+    font-family: Arial, sans-serif; /* Arial for subheaders */
+    color: #000; /* Black color for subheaders */
+    font-size: 2em; /* Slightly smaller than the title */
+    margin-top: 20px;
+}
+
+section {
+    max-width: 900px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6; /* Improved readability with more line spacing */
+}
+
+.vacation-image {
+    width: 80%; /* Adjusts the width to 80% of the container */
+    max-width: 600px; /* Ensures the image doesn't exceed 600px in width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Makes the image a block element to allow margin centering */
+    margin: 20px auto; /* Adds margin on top and bottom, and centers horizontally */
+    border-radius: 15px; /* Adds rounded corners to the image */
+    box-shadow: 0px 4px 12px rgba(136, 164, 212, 0.5); /* Soft shadow with more depth */
+}
+
+footer {
+    width: 100%;
+    background-color: #000; /* Black footer background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Adjust header font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust subheader font size for smaller screens */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .vacation-image {
+        width: 90%; /* Make the image take up more width on smaller screens */
+    }
+}
